@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .par{
+            height: 1200px;
+            width: 100%;
+            border: 1px solid;
+            margin:  auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(139, 138, 138);
+        }
+        .child{
+            height: 350px;
+            width: 300px;
+            border: hidden;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px black;
+            background-image:repeating-linear-gradient(rgb(158, 155, 155),rgb(252, 222, 227),rgb(158, 152, 152));
+        }
+        body{
+            background-color: rgb(63, 61, 61);
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+        .image{
+            height: 150px;
+            width: 150px;
+            border: 1px solid;
+            border-radius: 50%;
+            margin: 20px auto;
+            box-shadow: 0px 0px 20px rgb(6, 6, 6);
+        }
+        details{
+            background-color: gray;
+        }
+        summary{
+            font-size: 20px;
+            margin-left: 5px;
+            color: rgb(56, 3, 3);
+        }
+        .parentTable{
+            margin: auto;
+            color: black;
+            text-align: start;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow:0px 0px 20px ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Worldcup Cricketers-2023</h1>
+    <div class="par">
+        <div class="child" id="child1">
+            <img class="image" src="./rohitShrama.webp" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Rohit Sharma</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td> 30 April 1987</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>52</td>
+                                        <td>262</td>
+                                        <td>148</td>
+                                        <td>110</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>3677</td>
+                                        <td>10709</td>
+                                        <td>3853</td>
+                                        <td>8365</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child2">
+            <img class="image" src="./virat.jpg" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Virat Kohli</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>5 November 1988</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2006</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>111</td>
+                                        <td>292</td>
+                                        <td>115</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>8,676</td>
+                                        <td>13,848</td>
+                                        <td>4.008</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child3">
+            <img class="image" src="./hardik.jpg" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Hardik Pandya</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>11 October 1993</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>11</td>
+                                        <td>85</td>
+                                        <td>87</td>
+                                        <td>29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>532</td>
+                                        <td>1769</td>
+                                        <td>1251</td>
+                                        <td>1351</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child4">
+            <img class="image" src="./shubhamGill.jpeg" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Shubman Gill</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>8 September 1999</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>18</td>
+                                        <td>44</td>
+                                        <td>11</td>
+                                        <td>45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>966</td>
+                                        <td>2271</td>
+                                        <td>304</td>
+                                        <td>3,508</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child5">
+            <img class="image" src="./Shreyas Iyer.jpg" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Shreyas Iyer</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>6 December 1994</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>10</td>
+                                        <td>58</td>
+                                        <td>49</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>666</td>
+                                        <td>2331</td>
+                                        <td>1043</td>
+                                        <td>5324</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child6">
+            <img class="image" src="./KL Rahul.jpg" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>KL Rahul</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>18 April 1992</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>47</td>
+                                        <td>72</td>
+                                        <td>72</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>2642</td>
+                                        <td>2743</td>
+                                        <td>2265</td>
+                                        <td>6539</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child7">
+            <img class="image" src="./Ravindra Jadeja.jpg" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Ravindra Jadeja</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>6 December 1988</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>67</td>
+                                        <td>197</td>
+                                        <td>64</td>
+                                        <td>122</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>2804</td>
+                                        <td>2756</td>
+                                        <td>457</td>
+                                        <td>6900</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child8">
+            <img class="image" src="./Ravichandran Ashwin.jpg" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Ravichandran Ashwin</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>17 September 1986</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2010</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>94</td>
+                                        <td>116</td>
+                                        <td>65</td>
+                                        <td>144</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>3129</td>
+                                        <td>707</td>
+                                        <td>184</td>
+                                        <td>4955</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child9">
+            <img class="image" src="./Shardul Thakur.png" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Shardul Thakur</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>16 October 1991</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>8</td>
+                                        <td>44</td>
+                                        <td>25</td>
+                                        <td>73</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>254</td>
+                                        <td>319</td>
+                                        <td>69</td>
+                                        <td>1541</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child10">
+            <img class="image" src="./Jasprit Bumrah.png" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Jasprit Bumrah</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>6 December 1993</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>30</td>
+                                        <td>89</td>
+                                        <td>62</td>
+                                        <td>58</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>212</td>
+                                        <td>91</td>
+                                        <td>8</td>
+                                        <td>392</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child11">
+            <img class="image" src="./Mohammed Siraj.png" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Mohammed Siraj</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>13 March 1994</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>21</td>
+                                        <td>41</td>
+                                        <td>8</td>
+                                        <td>61</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>80</td>
+                                        <td>46</td>
+                                        <td>5</td>
+                                        <td>426</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child12">
+            <img class="image" src="./Kuldeep Yadav.jpg" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Kuldeep Yadav</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>14 December 1994</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>2</td>
+                                        <td>24</td>
+                                        <td>21</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>33</td>
+                                        <td>756</td>
+                                        <td>23</td>
+                                        <td>16</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child13">
+            <img class="image" src="./Mohammed Shami.png" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Mohammed Shami</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>3 September 1990</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>64</td>
+                                        <td>101</td>
+                                        <td>23</td>
+                                        <td>88</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>750</td>
+                                        <td>220</td>
+                                        <td>0</td>
+                                        <td>1049</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child14">
+            <img class="image" src="./Ishan Kishan.webp" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Ishan Kishan</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td>18 July 1998</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>2</td>
+                                        <td>27</td>
+                                        <td>27</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>78</td>
+                                        <td>933</td>
+                                        <td>653</td>
+                                        <td>3063</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+        <div class="child" id="child15">
+            <img class="image" src="./Surya Kumar Yadav.webp" alt="">
+            <table class="parentTable">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>Surya Kumar Yadav</td>
+                </tr>
+                <tr>
+                    <td><b>Born:</b></td>
+                    <td> 14 sep 1990</td>
+                </tr>
+                <tr>
+                    <td><b>joined:</b></td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <details>
+                            <summary>Career statistics</summary>
+                            <table class=".childTable" border="1px solid">
+                                <thead>
+                                    <tr>
+                                        <th>Competition</th>
+                                        <th>Test</th>
+                                        <th>ODI</th>
+                                        <th>T20I</th>
+                                        <th>FC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matches	</td>
+                                        <td>29</td>
+                                        <td>53</td>
+                                        <td>82</td>
+                                        <td>109</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Runs Scored</td>
+                                        <td>659</td>
+                                        <td>1841</td>
+                                        <td>5628</td>
+                                        <td>3121</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+    </div>
+</body>
+</html>
